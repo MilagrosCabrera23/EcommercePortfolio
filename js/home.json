@@ -1,0 +1,60 @@
+[
+    {
+        "id": 1,
+        "title": "Samsung Galaxy A54 5g 8+128gb Color Black",
+        "price": "286.999",
+        "category": "smartphones",
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_883546-MLU69556143824_052023-O.webp"
+    },
+    {
+        "id": 2,
+        "title": "Apple Macbook Air - Gris espacial(512 GB)",
+        "price": 957.599,
+        "category": "notebooks",
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_801112-MLA46516512347_062021-O.webp"
+    },
+    {
+        "id": 3,
+        "title": "Mother MSI A320M-A PRO AM4",
+        "price": "73.000",
+        "category": "placa madrte",
+        "thumbnail": "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_35857_Mother_MSI_A320M-A_PRO_AM4_1ef3e050-grn.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Placa de Video ASUS GeForce GTX 1660",
+        "price": "335.550",
+        "category": "placa de video",
+        "thumbnail": "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_37281_Placa_de_Video_ASUS_GeForce_GTX_1660_SUPER_6GB_GDDR6_TUF_670fd7e2-grn.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Disco Rigido Externo WD Elements 2TB",
+        "price": "62.100",
+        "category": "almacenamiento",
+        "thumbnail": "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_37114_Disco_Rigido_Externo_WD_Elements_2TB_USB_3.0_d858523a-grn.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Procesador Intel Core i5 11400F 4.40GHz",
+        "price": "156.350",
+        "category": "procesadores",
+        "thumbnail": "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_25686_Procesador_Intel_Core_i5_11400F_4.40GHz_Turbo_S1200_Rocket_Lake_f8a24db3-grn.jpg"
+    },
+    {
+        "id": 7,
+        "title": "Fuente Be Quiet 1000W 80 Plus Gold",
+        "price": "97.800",
+        "category": "fuentes",
+        "thumbnail": "https://imagenes.compragamer.com/productos/compragamer_Imganen_general_34993_Fuente_Be_Quiet_1000W_80_Plus_Gold_PURE_POWER_11_Full_Modular_3d25f718-grn.jpg"
+    },
+    {
+        "id": 8,
+        "title": "Tablet Philco 10.1” 2GB 32GB 94TP10A332",
+        "price": 79.999,
+        "category": "tablets",
+        "thumbnail": "https://images.fravega.com/f300/8483304077267b0fd4bcbba5e8c502e5.jpg.webp"
+    }
+  
+
+]

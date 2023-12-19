@@ -1,0 +1,355 @@
+* {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*DIV CONTENEDOR*/
+.shipping-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+
+/*NAVBAR*/
+.navbar {
+  background-color: steelblue;
+  color: white;
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+  margin: 0em 3em;
+}
+
+/*BARRA DE BUSQUEDA*/
+.buscar {
+  margin-right: 5EM;
+}
+
+#searchBar {
+  width: 100% !important;
+}
+
+.btn-buscar {
+  color: white;
+  background-color: slateblue;
+  border: transparent;
+}
+
+/* MODAL FAVORITOS:*/
+.card-favoritos {
+  border: transparent;
+  margin-left: 2em;
+}
+
+.favoritos-footer {
+  text-decoration: none;
+  margin-right: 11em;
+  font-size: 0.9em;
+}
+
+.text-favoritos {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.img-favoritos {
+  width: 20%;
+  object-fit: cover;
+}
+
+/*MODAL DE COOKIES*/
+.wrapper {
+  position: relative;
+
+}
+
+/*MODAL CARRITO CARD*/
+.card-carrito {
+display: flex; 
+}
+
+.img-carrito {
+  height: 50%;
+  position: relative;
+  left: 0.5em;
+  top: 1.2em;
+  object-fit: cover;
+}
+
+.title-carrito {
+  text-align: center;
+  font-size: 1em;
+  margin-top: 1.2em;
+  font-weight: bold;
+  color: slateblue;
+}
+
+.text-carrito {
+  text-align: center;
+  font-size: 1em;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+}
+
+
+/*footer*/
+.icons a {
+  margin-left: -3em;
+}
+
+.p-footer {
+  font-size: 1.1em;
+  margin: 1.5em;
+  font-weight: 500;
+}
+
+/*CAROUSEL*/
+.swiper {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Estilos para las imágenes dentro del contenedor de Swiper */
+.swiper img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  --swiper-navigation-size: 20px;
+  color: black;
+  background-color: ghostwhite;
+  height: 50px;
+  width: 35px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Mostrar los botones de navegación al pasar el mouse sobre el contenedor de Swiper */
+.swiper:hover .swiper-button-prev,
+.swiper:hover .swiper-button-next {
+  opacity: 1;
+}
+
+/* Estilos para la paginación */
+.swiper-pagination {
+  --swiper-pagination-colors: crimson;
+  bottom: 10px;
+}
+
+@media (min-width: 1025px) {
+  .swiper-container img {
+    height: 454px;
+    width: 100%;
+  }
+}
+
+/* DETALLLES DELL PRODUCTO : PAGINA */
+.margen-detalles{
+  margin: 1em;
+}
+.img-detalles{
+ object-fit: cover;
+display: flex; 
+width: 10%;
+}
+.title-carrusel-similar{
+  margin: 0.5em;
+  font-style: italic;
+}
+/* #cardInfo{
+  display: flex;
+    flex-direction:row;
+} */
+.title-detalles{
+  color:slateblue;
+text-transform: uppercase;
+}
+
+/*modal login*/
+.margenes-login {
+  margin-left: 1.3em;
+  font-size: 1em;
+  text-decoration: none;
+  text-align: center;
+}
+
+.bold-login {
+  font-weight: 600;
+}
+
+.botonSesion {
+  margin: 0.7em 4em;
+  background-color: slateblue;
+  color: white;
+  border: transparent;
+  padding: 0.3em;
+  border-radius: 0.2em;
+  top: 1em;
+  ;
+}
+
+/*CAROUSEL DE CARD DEL HOME*/
+#carrusel {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-detalles {
+  text-decoration: none;
+  color: black;
+}
+
+.boxImg {
+  display: flex;
+  justify-content: center;
+}
+
+.boxImg img {
+  height: 14vh;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carrusel-item {
+  margin: 2em;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2), 0 3px 1px 0 rgba(0, 0, 0, .12), 0 2px 2px 0 rgba(0, 0, 0, .14) !important;
+  ;
+}
+
+.title-card {
+  font-weight: bold;
+  text-align: center;
+}
+
+.price-card {
+  font-size: 1em;
+  font-weight: bold;
+  color: slateblue;
+  text-align: center;
+}
+
+
+/*newsletter  de home*/
+#newsletter-Form {
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  color: black;
+
+}
+
+.align-text-newsletter {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
+}
+
+#botonRegistrarse {
+  margin-bottom: 1em;
+  background-color: slateblue;
+  color: white;
+  border: transparent;
+  border-radius: 0.2em;
+  padding: 0.5em;
+}
+
+/*PAGINA  DE PRODUCTOS*/
+.card {
+  height: auto;
+  margin: 1.2em;
+}
+
+#productos {
+  margin: 1em;
+}
+
+.card-img {
+  width: 40% !important;
+  margin: 1em;
+}
+
+
+/* PAGINA DE DEVOLUCIONES */
+.colors {
+  color: crimson;
+  margin: 1em;
+  font-size: 1.1em;
+}
+
+.parrafos-devoluciones {
+  margin-left: 1em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.2em;
+}
+
+.titles-devoluciones {
+  color: slategrey;
+  text-align: center;
+  margin: 1.2em 0em;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: oblique;
+  font-size: 1.5em;
+
+}
+
+/* pagina de contacto: */
+.titles {
+  color: crimson;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0.5em;
+  font-weight: bold;
+}
+
+.h6-contacto {
+  text-align: center;
+  margin: 0.2em;
+  font-weight: 500;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+
+.contacto-Form {
+  display: flex;
+  margin: 1em;
+  position: relative;
+  justify-content: center;
+  flex-direction: column;
+  width: 35%;
+  justify-content: center;
+  left: 26em;
+}
+
+.lab-form {
+  align-items: center;
+  font-weight: 600;
+  text-align: center;
+}
+
+#botonEnviar {
+  position: relative;
+  left: 10em;
+  margin: 0.5em;
+  width: 20%;
+  font-size: 1.1em;
+  background-color: slateblue;
+  color: aliceblue;
+  border-radius: 4px;
+  border: transparent;
+}

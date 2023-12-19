@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- cambiar la descripcion -->
+    <meta name="description"
+        content="En Electra-Tech, nos esforzamos por brindarte la mejor experiencia de compra. Si no estás completamente satisfecho con tu compra, ofrecemos una política de devolución fácil y sin complicaciones. ">
+    <meta name="author" content="Cabrera Milagros Magaly">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="../img/icon.svg" type="image/x-icon">
+    <!--BS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Sweet Alert-->
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Electra-Tech</title>
+</head>
+
+<body>
+
+    <header>
+        <h6 class="h6-shipping-container shipping-container"> ENVIO GRATIS superando $40.000</h6>
+
+        <!--Navbar BS-->
+        <nav class="navbar navbar-expand-lg bg-nav-">
+
+            <div class="container-fluid d-flex">
+
+
+                <a class="navbar-brand  mr-4" href="../index.html">Electra-Tech</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse cabecera" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <a class="nav-link text-white" href="../pages/productos.html">PRODUCTOS </a>
+                        <a class="nav-link text-white  me-2" href="#">DEVOLUCIONES </a>
+                        <a class="nav-link text-white" href="../pages/contacto.html">CONTACTO </a>
+                    </ul>
+
+                    <form class="d-flex buscar " role="search">
+                        <input class="form-control m-1" type="search" placeholder="" aria-label="Buscar">
+                        <button class="btn btn-danger btn-buscar m-1" type="submit">Buscar</button>
+                    </form>
+
+                    <!--ICONOS-->
+                    <div class="d-flex">
+                        <a href="#" class="nav-link m-2" data-bs-toggle="modal" data-bs-target="#idModalFavoritos">
+                            <i class="fas fa-heart" id="iconFavoritos"></i>
+                        </a>
+
+                        <a class="nav-link m-2" href="#" id="botonCarrito" data-bs-toggle="modal"
+                            data-bs-target="#idModalCarrito">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <a href="#" class="nav-link m-2" data-bs-toggle="modal" data-bs-target="#idModalLogin">
+                            <i class="fas fa-user" id="iconUser"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+        </nav>
+        </nav>
+    </header>
+    <main>
+        <section class="politicas">
+            <h2 class="titles-devoluciones">POLITICA DE DEVOLUCIONES,CAMBIO Y GARANTIAS:</h2>
+
+            <article>
+                <h6 class=""><strong class="colors">POLITICA DE DEVOLUCION:</strong></h6>
+                <p class="parrafos-devoluciones"> Todas las devoluciones tienen un plazo máximo de 5 días después de
+                    efectuada la compra.
+                    Para poder realizar una devolución, el producto debe estar en su empaque original y no debe haber
+                    sido
+                    usado. En caso de que el empaque cuente con un film de protección o fajas de seguridad, los mismos
+                    deben
+                    estar en su estado original. </p>
+                <br>
+            </article>
+
+            <article>
+                <h6><strong class="colors">POLITICA DE CAMBIO:</strong></h6>
+                <p class="parrafos-devoluciones"> Todos los cambios tienen un plazo máximo de 10 días después de
+                    efectuada la compra.
+                    Para poder realizar un cambio, el producto debe estar en su empaque original y no debe haber sido
+                    usado.
+                    En
+                    caso
+                    de que el empaque cuente con un film de protección o fajas de seguridad, los mismos deben estar en
+                    su
+                    estado
+                    original.</p>
+
+                <h6 class="parrafos-devoluciones"><strong>En caso de Cambios o Devoluciones, los envíos quedan a cargo
+                        del comprador.</strong></h6>
+                <br><br>
+            </article>
+
+            <article>
+                <h6><strong class="colors">GARANTIA:</strong></h6>
+                <p class="parrafos-devoluciones">
+                    Todos nuestros productos cuentan con 1 año de Garantía. Esta misma cubre la reparación del equipo
+                    y/o el cambio de la unidad en caso de ser necesario.
+                    La Garantía sera aplicada en casos de fallas y mal funcionamiento de fabrica, No se aplicara en caso
+                    de un mal uso de los productos. Para gestionar la misma, sera necesario la Factura de compra y N° de
+                    serie del dispositivo.
+                </p>
+
+                <br><br>
+            </article>
+
+            <section>
+                <h3 class="titles-devoluciones">PREGUNTAS MAS FRECUENTES:</h3>
+                <br><br>
+
+                <article>
+                    <h6><strong class="colors">¿Cómo realizo un pedido?</strong></h6>
+                    <p class="parrafos-devoluciones">Solo tenés que seleccionar todos los productos que deseas adquirir.
+                        Seguidamente, en el carrito
+                        de compras, para conocer el costo del envío colocás tu código postal en el recuadro
+                        correspondiente, elegís la mensajería de tu preferencia y debajo seleccionas la forma de pago.
+                        Luego hacés clic en el botón COMPRAR y podés acceder como cliente (si ya tenés cuenta en
+                        Electra-Tech) o crear un cliente nuevo. Por último, completás los pasos brindados por el
+                        asistente,
+                        hasta confirmar la compra. Se te asignará un número de pedido y se mostrarán los datos del
+                        mismo. También enviaremos un mail a tu correo electrónico registrado con los detalles del pedido
+                        realizado..</p>
+                    <br>
+                </article>
+
+                <article>
+                    <h6><strong class="colors">¿Cuáles son las formas de pago?</strong></h6>
+                    <p class="parrafos-devoluciones"> Contamos con dos formas de pago: a través de
+                        depósito/transferencia bancaria, con la cual
+                        obtenés el precio especial, o MercadoPago (Tarjetas online, PagoFácil y RapiPago) con los cuales
+                        podés abonar en cuotas, al precio de lista.</p>
+                    <br>
+                </article>
+
+                <article>
+                    <h6><strong class="colors">¿Cómo abono a través de depósito/transferencia?</strong></h6>
+                    <p class="parrafos-devoluciones"> Una vez se realiza el pedido, te facilitamos los datos del CBU.
+                        Debes abonar e informar el pago
+                        desde nuestra web, antes de la fecha de vencimiento de la reserva.</p>
+                    <br>
+                </article>
+
+                <article>
+                    <h6><strong class="colors">¿Cómo puedo abonar a través de MercadoPago? </strong></h6>
+                    <p class="parrafos-devoluciones"> Podés hacerlo de tres formas: Con tarjetas online en cuotas (no se
+                        puede acceder a
+                        cuotas sin
+                        interés); A través de RapiPago/ PagoFácil (se abona al precio de lista, pero no se
+                        pueden hacer
+                        cuotas, sólo se puede abonar en un pago) ; y realizando una transferencia desde <br>
+                        tu cuenta de
+                        MercadoPago.</p>
+                    <br>
+                </article>
+
+                <article>
+                    <h6><strong class="colors">¿El precio que figura en la web es el precio final?</strong></h6>
+                    <p class="parrafos-devoluciones"> Todos los precios en la web incluyen el IVA, y se encuentran
+                        expresados en pesos argentinos.</p>
+                    <br>
+                </article>
+
+                <article>
+                    <h6><strong class="colors">¿Cómo tramito la factura de mi compra?</strong></h6>
+                    <p class="parrafos-devoluciones"> En primer lugar, para conocer el costo del envío, una vez al
+                        agregues al carrito tu compra, solo debes colocar tu código postal en el recuadro
+                        correspondiente,
+                        seleccionar la mensajería de tu preferencia y elegir si deseas el retiro en
+                        alguna sucursal o la entrega a domicilio. Actualmente realizamos envíos a todo
+                        el país través de Oca y Andreani; y si te encontrás en CABA o alrededores,
+                        podrás seleccionar el servicio de Mensajería Privada que es exclusivo de
+                        Electra-Tech. Tené en cuenta que, para calcular el costo del envío, se toman en
+                        consideración tanto las dimensiones y peso del paquete como la distancia de la
+                        localidad de entrega.</p>
+                    <br>
+                </article>
+
+
+            </section>
+        </section>
+
+
+        <!-- MODAL DE CARRITO -->
+        <div class="modal fade" id="idModalCarrito" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body" id="bodyDelCarrito">
+                        <div class="row ml-ato">
+                            <h6 class="modal-p text-center" id="precioSubTotal">No hay productos en el carrito </h6>
+                            <h6 class="precioTotal">Total</h6>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Seguir comprando</button>
+
+                        <button type="button" id="finalizarCompra" data-bs-dismiss="modal"
+                            class="btn btn-success">Finalizar Compra</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <!-- Modal INICIO DE SESION-->
+        <div class="modal fade" id="idModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h6 class="modal-title" id="exampleModalLabel">Inicio de Sesión</h6>
+                        <a href="#" class="margenes-login">¿No tenes una cuenta? Registrate</a>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="modal-body">
+                        <form id="modal" class="">
+                            <div class="text-center  bold-login">
+                                <label for="username" class="form-label">Direccion de Email:</label>
+                                <input type="text" class="form-control" id="username" aria-describedby="username"
+                                    required>
+                            </div>
+                            <div class="text-center bold-login">
+                                <label for="password" class="form-label">Contraseña:</label>
+                                <input type="password" class="form-control" id="password" aria-describedby="password">
+                            </div>
+                            <div class="botonInicioSesion">
+                                <button type="submit" class="botonSesion">Iniciar Sesión</button>
+                                <a href="#" class="margenes-login" id="olvideContraseña">Olvide mi
+                                    contraseña</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- MODAL DE FAVORITOS -->
+        <div class="modal fade" id="idModalFavoritos" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title " id="exampleModalLabel">Mis Favoritos</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center" id="bodyDeFavoritos">
+                        <p class="text-favoritos">Todavía no tienes favoritos? Explora nuestra tienda y encuéntralos.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="./productos.html" class="text-primary favoritos-footer"> Ver todos los productos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Formulario de noticias/newsletter-->
+        <hr>
+
+        <h6 class="align-text-newsletter">¿Queres recibir nuestras ofertas? ¡Registrate ahora mismo y comenza a
+            disfrutarlas!</h6>
+
+        <div id="newsletter-Form">
+            <form class="centrar-form" action="https://formsubmit.co/ElectraTech@gmail.com" method="POST">
+
+                <div class="margenes-input">
+
+                    <input type="email" placeholder="Email" id="correo" name="correo" required>
+
+                    <button type="submit" id="botonRegistrarse" class="boton-registrarse mt-2">Enviar</button>
+                </div>
+        </div>
+
+
+        </form>
+
+    </main>
+    <footer class="navbar">
+        <p class="m-2 p-footer">&copy; Electra-Tech-2019. Todos los derechos reservados</p>
+
+        <div class="icons m-2">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook footer-icon"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter "></i></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!--Script de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+    <!--Script de Sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
+
+</body>
+
+</html>

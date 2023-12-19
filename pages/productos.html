@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Notebooks, computadoras, productos gamer, monitores. Encontrá esto y más en nuestro
+        sitio. Contactanos y recibí asesoramiento personalizado para comprar lo que estabas buscando.">
+    <meta name="copyright" content="Electra-Tech-Ecommerce-2019">
+    <meta name="author" content="Cabrera Milagros Magaly">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="shortcut icon" href="../img/icon.svg" type="image/x-icon">
+    <!--BS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--Sweet Alert-->
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Electra-Tech</title>
+</head>
+
+<body>
+
+    <header>
+        <h6 class="h6-shipping-container shipping-container"> ENVIO GRATIS superando $40.000</h6>
+
+        <!--Navbar BS-->
+        <nav class="navbar navbar-expand-lg bg-nav-">
+
+            <div class="container-fluid d-flex">
+
+
+                <a class="navbar-brand  mr-4" href="../index.html">Electra-Tech</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse cabecera" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <a class="nav-link text-white" href="./productos.html">PRODUCTOS </a>
+                        <a class="nav-link text-white" href="../pages/devoluciones.html">DEVOLUCIONES </a>
+                        <a class="nav-link text-white  me-2" href="../pages/contacto.html">CONTACTO </a>
+                    </ul>
+
+                    <form class="d-flex buscar" role="search">
+                        <input class="form-control m-1" id="searchBar" type="search" placeholder="" aria-label="Buscar"
+                            value="">
+                        <button class="btn btn-danger btn-buscar m-1" type="submit">Buscar</button>
+                    </form>
+
+                    <!--ICONOS-->
+                    <div class="d-flex">
+                        <a href="#" class="nav-link m-2" data-bs-toggle="modal" data-bs-target="#idModalFavoritos">
+                            <i class="fas fa-heart" id="iconFavoritos"></i>
+                        </a>
+
+                        <a class="nav-link m-2" href="#" id="botonCarrito" data-bs-toggle="modal"
+                            data-bs-target="#idModalCarrito">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                        <a href="#" class="nav-link m-2" data-bs-toggle="modal" data-bs-target="#idModalLogin">
+                            <i class="fas fa-user" id="iconUser"></i>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            </div>
+        </nav>
+        </nav>
+    </header>
+
+    <main>
+        <!--CARD DE PRODUCTOS:-->
+        <h6 class="titles">Nuestros Productos:</h6>
+
+        <select class="form-select" id="selectOpciones" aria-label=".form-select-sm example">
+            <option selected>Filtrar por:</option>
+            <option value="1">Mayor precio</option>
+            <option value="2">Menor precio</option>
+            <option value="3">Categorias</option>
+        </select>
+
+
+        <div id="coincidencias">
+
+        </div>
+
+        <div id="productos" class="row">
+        </div>
+
+
+        <!-- MODAL DE CARRITO -->
+
+        <div class="modal fade" id="idModalCarrito" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Carrito de Compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body" id="bodyDelCarrito">
+                    <div class="row ml">
+                        <h6 class="modal-p text-center" id="precioSubTotal">No hay productos en el carrito </h6>
+                        <h6 class="precioTotal">Total</h6>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Seguir comprando</button>
+
+                        <button type="button" id="finalizarCompra" data-bs-dismiss="modal"
+                            class="btn btn-success">Finalizar Compra</button>
+                </div>
+             
+                </div>
+            </div>
+      
+    </div>
+    </div>
+                <!-- Modal INICIO DE SESION-->
+                <div class="modal fade" id="idModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h6 class="modal-title" id="exampleModalLabel">Inicio de Sesión</h6>
+                                <a href="#" class="margenes-login">¿No tenes una cuenta? Registrate</a>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body" id="modal-body">
+                                <form id="modal" class="">
+                                    <div class="text-center  bold-login">
+                                        <label for="username" class="form-label">Direccion de Email:</label>
+                                        <input type="text" class="form-control" id="username"
+                                            aria-describedby="username" required>
+                                    </div>
+                                    <div class="text-center bold-login">
+                                        <label for="password" class="form-label">Contraseña:</label>
+                                        <input type="password" class="form-control" id="password"
+                                            aria-describedby="password">
+                                    </div>
+                                    <div class="botonInicioSesion">
+                                        <button type="submit" class="botonSesion">Iniciar Sesión</button>
+                                        <a href="#" class="margenes-login" id="olvideContraseña">Olvide mi
+                                            contraseña</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- MODAL DE FAVORITOS -->
+                <div class="modal fade" id="idModalFavoritos" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title " id="exampleModalLabel">Mis Favoritos</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center" id="bodyDeFavoritos">
+                                <p class="text-favoritos">Todavía no tienes favoritos? Explora nuestra tienda y
+                                    encuéntralos.
+                                </p>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="./productos.html" class="text-primary favoritos-footer"> Ver todos los
+                                    productos</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Formulario de noticias/newsletter-->
+                <hr>
+
+                <h6 class="align-text-newsletter">¿Queres recibir nuestras ofertas? ¡Registrate ahora mismo y comenza a
+                    disfrutarlas!</h6>
+
+                <div id="newsletter-Form">
+                    <form class="centrar-form" action="https://formsubmit.co/ElectraTech@gmail.com" method="POST">
+
+                        <div class="margenes-input">
+
+                            <input type="email" placeholder="Email" id="correo" name="correo" required>
+
+                            <button type="submit" id="botonRegistrarse" class="boton-registrarse mt-2">Enviar</button>
+                        </div>
+                </div>
+
+
+                </form>
+
+            </div>
+
+
+    </main>
+    <footer class="navbar">
+        <p class="m-2 p-footer">&copy; Electra-Tech-2019. Todos los derechos reservados</p>
+
+        <div class="icons m-2">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook footer-icon"></i></a>
+            <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter "></i></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <!--Script de Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+        </script>
+    <!-- Script de Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
